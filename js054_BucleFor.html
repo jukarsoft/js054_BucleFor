@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta lang="es">
+	<meta name="description" content="Control HTML y CSS3"> 
+	<meta name="description" content="Free Web tutorials">
+  	<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+  	<meta name="author" content="Juan Carlos">
+	<title>bucle for </title>
+	<script type="text/javascript">
+		var tres=3;
+		var cinco=5;
+		var tope;
+		tope=parseInt(prompt('introduce un  número entre 1 y 1000'));
+		if (isNaN(tope) || tope > 1000 || tope < 1) {
+			document.write (`${tope} no es un número válido `);
+		} else {
+			document.write (`número introducido ${tope}`);
+			document.write ('<br>')
+			for (i=1; i <= tope; i++) {
+				if (i%3 == 0 && i%5 == 0) {
+					document.write (`--> ${i} es divisible por ${tres} y por ${cinco} FIZZBUZZ <br> `);
+				} else if (i%3 == 0) {
+					document.write (`--> ${i} es divisible por ${tres} FIZZ <br>`);
+				} else if (i%5 == 0) {
+							document.write (`--> ${i} es divisible por ${cinco} BUZZ <br>`);
+				} else {
+							document.write (`--> ${i} resto de números <br>`);
+				}
+			}
+		}
+	</script>
+</head>
+<body>
+
+</body>
+</html>
